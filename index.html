@@ -8,7 +8,7 @@
     </head>
     <body>
         <div id="app">
-            {{ message }}
+            {{ message1 }}
         </div>
 
         <div id="app-2">
@@ -21,6 +21,16 @@
                     {{ todo.text }}
                 </li>
             </ol>
+        </div>
+
+        <div id="app-5">
+            <p>{{ message2 }}</p>
+            <button v-on:click="reverseMessage">Reverse Message</button>
+        </div>
+
+        <div id="app-6">
+            <p>{{ message3 }}</p>
+            <input v-model="message3">
         </div>
 
         <script src="./index.js"></script>
